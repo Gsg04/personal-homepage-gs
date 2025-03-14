@@ -122,3 +122,33 @@ section .main-body{
     overflow: hidden;
 }
 
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;  /* 设置菜单项之间的间距 */
+}
+
+.nav-item {
+    white-space: nowrap;  /* 防止文本换行 */
+    margin-right: 15px;   /* 右侧间距 */
+}
+
+.nav-link {
+    padding: 8px 12px !important;  /* 调整内边距 */
+    font-size: 14px;     /* 调整字体大小 */
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
